@@ -12,13 +12,28 @@
 set $mod Mod1
 
 # Use feh to load a wallpaper
-exec feh --bg-fill ~/Pictures/wallpapers/fade_to_blue.jpg
+exec feh --bg-fill ~/Pictures/wallpapers/fade_to_blue.jpg --bg-fill ~/Pictures/wallpapers/it_was_you.jpg
+
 # Start up redshift
 exec redshift
 # Pulse Audio controls
-bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
-bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume
-bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle # mute sound
+# To find the 'sink' number (currently 56), run 'pactl list sinks'
+# Changed to @DEFAULT_SINK@ because the sink number kept changing
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ +5% #increase volume
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume @DEFAULT_SINK@ -5% #decrease volume
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute @DEFAULT_SINK@ toggle # mute sound
+
+# set odd workspaces to left, even to right monitor
+workspace 1 output DP-1
+workspace 2 output DP-2
+workspace 3 output DP-1
+workspace 4 output DP-2
+workspace 5 output DP-1
+workspace 6 output DP-2
+workspace 7 output DP-1
+workspace 8 output DP-2
+workspace 9 output DP-1
+workspace 10 output DP-2
 
 # Use synclient to change the scrolling direction for the mouse
 #doesn't seem to be working
@@ -42,15 +57,22 @@ font pango:monospace 8
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
+# Disable focus follows mouse
+focus_follows_mouse no
+
 # use i3lock with shortcut
 
-bindsym $mod+Shift+p exec i3lock -i ~/Pictures/wallpapers/blue_lights.png -p default -n -e
+bindsym $mod+Shift+p exec i3lock -t -i ~/Pictures/wallpapers/milkyway_scaled.png -p default -n -e
 
 # start a terminal
 bindsym $mod+Return exec i3-sensible-terminal
 
 # kill focused window
 bindsym $mod+Shift+q kill
+
+# Screen Shots
+bindsym Print exec scrot '%Y-%m-%d-%s_screenshot_$wx$h.jpg' -e 'mv $f ~/Pictures/'
+bindsym Control+Print exec gnome-screenshot -i
 
 # start dmenu (a program launcher)
 # bindsym $mod+d exec dmenu_run
