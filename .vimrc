@@ -13,8 +13,9 @@ set shiftround
 
 set expandtab
 set autoindent
-set smartindent
-set cindent
+" set smartindent
+filetype indent on
+" set cindent
 
 " set column color at 80
 set colorcolumn=80
@@ -29,7 +30,7 @@ set number
 set ruler
 
 " python uses 4 space indent instead of 2
-autocmd Filetype python setlocal expandtab ts=4 sw=4 sts=4
+autocmd filetype python set expandtab ts=4 sw=4 sts=4
 
 " show commands as they're being typed
 set showcmd
@@ -50,6 +51,10 @@ noremap _ ddkP
 
 " use Ctl-u in insert mode to uppercase the current word, end in append after it
 inoremap <c-u> <esc>viwU<esc>ea
+
+" use Ctl-j to jump 20 lines down and Ctl-l to go 20 lines 
+nnoremap <c-j> 10j
+nnoremap <c-k> 10k
 
 " edit vimrc easily
 " split puts them top/bottom
@@ -89,5 +94,6 @@ vnoremap <leader>[ c[]<esc>Pl
 vnoremap <leader>< c<><esc>Pl
 
 " trying out jk as escape from insert instead of capslock
-inoremap jk <esc>
-inoremap <esc> <nop>
+" didn't like it!
+" inoremap jk <esc>
+" inoremap <esc> <nop>

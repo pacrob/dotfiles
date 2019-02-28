@@ -12,7 +12,7 @@
 set $mod Mod1
 
 # Use feh to load a wallpaper
-exec feh --bg-fill ~/Pictures/wallpapers/fade_to_blue.jpg --bg-fill ~/Pictures/wallpapers/it_was_you.jpg
+exec feh --bg-fill ~/Pictures/wallpapers/fade_to_blue.jpg --bg-fill ~/Pictures/wallpapers/it_was_you_2.jpg
 
 # Start up redshift
 exec redshift
