@@ -51,6 +51,8 @@ noremap _ ddkP
 
 " use Ctl-u in insert mode to uppercase the current word, end in append after it
 inoremap <c-u> <esc>viwU<esc>ea
+inoremap <leader>" <esc>Bi"<esc>Ea"
+inoremap <leader>' <esc>Bi'<esc>Ea'
 
 " use Ctl-j to jump 20 lines down and Ctl-l to go 20 lines 
 nnoremap <c-j> 10j
@@ -86,8 +88,8 @@ nnoremap <leader>' viw<esc>a'<esc>bi'<esc>lel
 " https://stackoverflow.com/questions/11176159/how-to-jump-to-start-end-of-visual-selection
 
 "vnoremap <leader>" c""<esc>Pl
-vnoremap <leader>" <esc>`<i"<esc>`>a"<esc>
-vnoremap <leader>' <esc>`<i'<esc>`>a'<esc>
+vnoremap <leader>" <esc>`>a"<esc>`<i"<esc>
+vnoremap <leader>' <esc>`>a'<esc>`<i'<esc>
 vnoremap <leader>( c()<esc>Pl
 vnoremap <leader>{ c{}<esc>Pl
 vnoremap <leader>[ c[]<esc>Pl

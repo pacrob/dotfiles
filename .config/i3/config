@@ -82,6 +82,9 @@ bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 bindsym $mod+t exec --no-startup-id /opt/toggldesktop/TogglDesktop.sh
 # shortcut for chrome
 bindsym $mod+c exec --no-startup-id /opt/google/chrome/google-chrome
+# shortcut for speedcrunch calculator
+bindsym $mod+g exec --no-startup-id /usr/bin/speedcrunch
+for_window [class="SpeedCrunch"] floating enable
 
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
