@@ -95,6 +95,14 @@ vnoremap <leader>{ c{}<esc>Pl
 vnoremap <leader>[ c[]<esc>Pl
 vnoremap <leader>< c<><esc>Pl
 
+" using tabs, very exciting
+" idea from: https://www.techrepublic.com/blog/linux-and-open-source/use-tabs-to-open-multiple-files-in-vim/
+nnoremap <leader>h :tabp<cr>
+nnoremap <leader>l :tabn<cr>
+nnoremap <leader>j :tabl<cr>
+nnoremap <leader>k :tabr<cr>
+
+
 " trying out jk as escape from insert instead of capslock
 " didn't like it!
 " inoremap jk <esc>

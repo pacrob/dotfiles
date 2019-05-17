@@ -9,6 +9,7 @@
 #
 # Please see https://i3wm.org/docs/userguide.html for a complete reference!
 
+# set Alt as the mod key
 set $mod Mod1
 
 # Use feh to load a wallpaper
@@ -34,6 +35,23 @@ workspace 7 output DP-1
 workspace 8 output DP-2
 workspace 9 output DP-1
 workspace 10 output DP-2
+
+#######################################
+# STARTUP WINDOW LAYOUT SETUP
+######################################
+
+# open 6 terminal windows in workspace 4 - script is in ~/.local/bin
+exec --no-startup-id "all_terminals 4"
+
+# open 4 terminals, a toggl and a pidgin in workspace 2 - script is in ~/.local/bin
+exec --no-startup-id "workspace_2"
+
+# open a chome in workspace 1 and 3
+exec i3-msg "workspace 1; exec google-chrome"
+exec i3-msg "workspace 3; exec google-chrome"
+
+# END STARTUP LAYOUT
+######################################
 
 # Use synclient to change the scrolling direction for the mouse
 #doesn't seem to be working
@@ -92,10 +110,10 @@ for_window [class="SpeedCrunch"] floating enable
 # bindsym $mod+d exec --no-startup-id i3-dmenu-desktop
 
 # change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Left focus left
@@ -104,10 +122,10 @@ bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
 # move focused window
-bindsym $mod+Shift+j move left
-bindsym $mod+Shift+k move down
-bindsym $mod+Shift+l move up
-bindsym $mod+Shift+semicolon move right
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
 
 # alternatively, you can use the cursor keys:
 bindsym $mod+Shift+Left move left
@@ -116,7 +134,7 @@ bindsym $mod+Shift+Up move up
 bindsym $mod+Shift+Right move right
 
 # split in horizontal orientation
-bindsym $mod+h split h
+bindsym $mod+z split h
 
 # split in vertical orientation
 bindsym $mod+v split v
