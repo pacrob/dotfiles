@@ -1,0 +1,4 @@
+{
+    "vim.leader": ",",
+    "keyboard.dispatch": "keyCode"
+}
