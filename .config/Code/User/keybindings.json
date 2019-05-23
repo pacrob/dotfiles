@@ -70,6 +70,10 @@
     {
         "key": "ctrl+k enter",
         "command": "-workbench.action.keepEditor"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
     }
-
 ]
