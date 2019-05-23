@@ -56,6 +56,20 @@
         "key": "ctrl+l",
         "command": "-expandLineSelection",
         "when": "textInputFocus"
+    },
+
+    {
+        "key": "ctrl+shift+enter",
+        "command": "-editor.action.insertLineBefore",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "workbench.action.keepEditor"
+    },
+    {
+        "key": "ctrl+k enter",
+        "command": "-workbench.action.keepEditor"
     }
 
 ]
