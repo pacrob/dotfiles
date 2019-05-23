@@ -1,5 +1,8 @@
 {
     "vim.leader": ",",
     "keyboard.dispatch": "keyCode",
-    "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"]
+    "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+    "editor.fontWeight": "600",
+    "terminal.integrated.fontWeight": "600",
+    "terminal.integrated.fontWeightBold": "600"
 }
