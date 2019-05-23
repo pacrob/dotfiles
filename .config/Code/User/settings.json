@@ -4,5 +4,21 @@
     "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
     "editor.fontWeight": "600",
     "terminal.integrated.fontWeight": "600",
-    "terminal.integrated.fontWeightBold": "600"
+    "terminal.integrated.fontWeightBold": "600",
+    "vim.insertModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-u>"],
+            "after": ["<Esc>", "v", "i", "w", "U", "<Esc>", "e", "a"]
+        }
+    ],
+    "vim.normalModeKeyBindingsNonRecursive": [
+        {
+            "before": ["<C-j>"],
+            "after": ["1", "0", "j"]
+        },
+        {
+            "before": ["<C-k>"],
+            "after": ["1", "0", "k"]
+        }
+    ]   
 }
