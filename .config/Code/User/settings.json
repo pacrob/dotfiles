@@ -7,7 +7,7 @@
     "terminal.integrated.fontWeightBold": "600",
     "vim.insertModeKeyBindingsNonRecursive": [
         {
-            "before": ["<C-u>"],
+            "before": ["<C-i>"],
             "after": ["<Esc>", "v", "i", "w", "U", "<Esc>", "e", "a"]
         }
     ],
