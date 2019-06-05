@@ -19,6 +19,31 @@
         {
             "before": ["<C-k>"],
             "after": ["1", "0", "k"]
+        },
+        {
+            "before": ["-"],
+            "after": ["d", "d", "p"]
+        },
+        {
+            "before": ["_"],
+            "after": ["d", "d", "k", "P"]
+        },
+        {
+            "before": ["<leader>", "o"],
+            "after": ["o", "<Esc>", "k"]
+        },
+        {
+            "before": ["<leader>", "O"],
+            "after": ["O", "<Esc>", "j"]
         }
-    ]   
+    ],
+    "editor.rulers": [
+        80
+    ],
+    "workbench.activityBar.visible": false,
+    "editor.smoothScrolling": true,
+    "workbench.colorCustomizations": {
+        "tab.activeBorder": "#ff0000",
+        "tab.unfocusedActiveBorder": "#909090"
+    }
 }
