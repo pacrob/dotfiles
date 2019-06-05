@@ -57,7 +57,6 @@
         "command": "-expandLineSelection",
         "when": "textInputFocus"
     },
-
     {
         "key": "ctrl+shift+enter",
         "command": "-editor.action.insertLineBefore",
@@ -65,7 +64,8 @@
     },
     {
         "key": "ctrl+shift+enter",
-        "command": "workbench.action.keepEditor"
+        "command": "workbench.action.keepEditor",
+        "when": "editorTextFocus"
     },
     {
         "key": "ctrl+k enter",
@@ -73,7 +73,58 @@
     },
     {
         "key": "ctrl+u",
-        "command": "-cursorUndo",
+        "command": "-cursorUndo"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "scrollLineDown",
         "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "scrollLineUp",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+alt+l",
+        "command": "workbench.action.moveEditorToRightGroup"
+    },
+    {
+        "key": "shift+alt+h",
+        "command": "workbench.action.moveEditorToLeftGroup"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "workbench.debug.action.toggleRepl",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+'",
+        "command": "workbench.action.focusActiveEditorGroup",
+        "when": "!editorFocus"
+    },
+    {
+        "key": "ctrl+shift+y",
+        "command": "-workbench.debug.action.toggleRepl"
+    },
+    {
+        "key": "ctrl+shift+j",
+        "command": "workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+down",
+        "command": "-workbench.action.terminal.scrollDown",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+k",
+        "command": "workbench.action.terminal.scrollUp",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+up",
+        "command": "-workbench.action.terminal.scrollUp",
+        "when": "terminalFocus"
     }
 ]
