@@ -126,7 +126,8 @@
         "key": "ctrl+shift+up",
         "command": "-workbench.action.terminal.scrollUp",
         "when": "terminalFocus"
-    },    {
+    },
+    {
         "key": "ctrl+j",
         "command": "workbench.action.terminal.focusNext",
         "when": "terminalFocus"
@@ -135,6 +136,14 @@
         "key": "ctrl+k",
         "command": "workbench.action.terminal.focusPrevious",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+m",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new"
     }
-    
 ]
