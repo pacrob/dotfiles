@@ -49,5 +49,26 @@
     "editor.tabSize": 2,
     "[python]": {
         "editor.tabSize": 4
-    }
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.validate": [
+        "javascript",
+        "typescript"
+    ],
+    "editor.formatOnSave": true,
+    "prettier.singleQuote": true,
+    "prettier.eslintIntegration": true,
+    "prettier.tabWidth": 2,
+    "editor.tabCompletion": "on",
+    "debug.console.fontSize": 12,
+    "markdown.preview.fontSize": 12,
+    "terminal.integrated.fontSize": 12,
+    "editor.fontSize": 12,
+    "vim.easymotionMarkerFontSize": "12",
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "eslint.autoFixOnSave": true
 }
