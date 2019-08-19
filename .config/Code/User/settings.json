@@ -70,5 +70,7 @@
     "[typescript]": {
         "editor.defaultFormatter": "esbenp.prettier-vscode"
     },
-    "eslint.autoFixOnSave": true
+    "eslint.autoFixOnSave": true,
+    "workbench.colorTheme": "Material Theme",
+    "workbench.iconTheme": "material-icon-theme
 }
