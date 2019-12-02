@@ -72,5 +72,9 @@
     },
     "eslint.autoFixOnSave": true,
     "workbench.colorTheme": "Material Theme",
-    "workbench.iconTheme": "material-icon-theme
+    "workbench.iconTheme": "material-icon-theme",
+    "vim.useSystemClipboard": true,
+    "editor.minimap.maxColumn": 1200,
+    "editor.minimap.scale": 2,
+    "editor.acceptSuggestionOnCommitCharacter": false
 }
