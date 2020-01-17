@@ -44,7 +44,11 @@
     "editor.smoothScrolling": true,
     "workbench.colorCustomizations": {
         "tab.activeBorder": "#ff0000",
-        "tab.unfocusedActiveBorder": "#909090"
+        "tab.unfocusedActiveBorder": "#909090",
+        "editorGroup.border": "#294469",
+        "sideBar.border": "#294469",
+        "panel.border": "#294469",
+        "contrastBorder": "#294469"
     },
     "editor.tabSize": 2,
     "[python]": {
