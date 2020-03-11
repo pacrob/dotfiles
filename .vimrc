@@ -107,3 +107,17 @@ nnoremap <leader>k :tabr<cr>
 " didn't like it!
 " inoremap jk <esc>
 " inoremap <esc> <nop>
+
+" auto install plug vim plugin manager                                          
+if empty(glob('~/.vim/autoload/plug.vim'))                                      
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs                      
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim       
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC                          
+endif                                                                           
+                                                                                
+call plug#begin('~/.vim/plugged')                                               
+                                                                                
+Plug 'othree/yajs.vim'                                                          
+                                                                                
+                                                                                
+call plug#end()  
