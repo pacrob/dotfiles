@@ -49,8 +49,8 @@ set showcmd
 noremap - ddp
 noremap _ ddkP
 
-" use Ctl-u in insert mode to uppercase the current word, end in append after it
-inoremap <c-u> <esc>viwU<esc>ea
+" use Ctl-i in insert mode to uppercase the current word, end in append after it
+inoremap <c-i> <esc>viwU<esc>ea
 inoremap <leader>" <esc>Bi"<esc>Ea"
 inoremap <leader>' <esc>Bi'<esc>Ea'
 
