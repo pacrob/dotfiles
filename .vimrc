@@ -1,3 +1,8 @@
+" need true colors for themes to work
+if (has('termguicolors'))
+  set termguicolors
+endif
+
 " force vim to use a local .vimrc if present - allows project-specific settings
 set exrc
 
@@ -107,17 +112,26 @@ nnoremap <leader>k :tabr<cr>
 " didn't like it!
 " inoremap jk <esc>
 " inoremap <esc> <nop>
+"
 
-" auto install plug vim plugin manager                                          
-if empty(glob('~/.vim/autoload/plug.vim'))                                      
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs                      
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim       
-  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC                          
-endif                                                                           
-                                                                                
-call plug#begin('~/.vim/plugged')                                               
-                                                                                
-Plug 'othree/yajs.vim'                                                          
-                                                                                
-                                                                                
-call plug#end()  
+" auto install plug vim plugin manager
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'othree/yajs.vim'
+Plug 'leafgarland/typescript-vim'
+Plug 'kaicataldo/material.vim'
+Plug 'itchyny/lightline.vim'
+
+
+call plug#end()
+
+let g:lightline = { 'colorscheme': 'material_vim' }
+let g:material_terminal_italics = 1
+let g:material_theme_style = 'default'
+colorscheme material
