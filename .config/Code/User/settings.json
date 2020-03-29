@@ -80,5 +80,8 @@
     "vim.useSystemClipboard": true,
     "editor.minimap.maxColumn": 1200,
     "editor.minimap.scale": 2,
-    "editor.acceptSuggestionOnCommitCharacter": false
+    "editor.acceptSuggestionOnCommitCharacter": false,
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true
+    }
 }
