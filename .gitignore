@@ -2,6 +2,8 @@
 !.bashrc
 !.bash_aliases
 !.vimrc
+!.vim/
+!.vscode/
 !.gitignore
 !.config/i3/*
 !.config/redshift.conf
