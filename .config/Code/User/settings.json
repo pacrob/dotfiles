@@ -1,40 +1,92 @@
 {
     "vim.leader": ",",
     "keyboard.dispatch": "keyCode",
-    "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+    "terminal.integrated.commandsToSkipShell": [
+        "-workbench.action.quickOpen"
+    ],
     "editor.fontWeight": "600",
     "terminal.integrated.fontWeight": "600",
     "terminal.integrated.fontWeightBold": "600",
     "vim.insertModeKeyBindingsNonRecursive": [
         {
-            "before": ["<C-i>"],
-            "after": ["<Esc>", "v", "i", "w", "U", "<Esc>", "e", "a"]
+            "before": [
+                "<C-i>"
+            ],
+            "after": [
+                "<Esc>",
+                "v",
+                "i",
+                "w",
+                "U",
+                "<Esc>",
+                "e",
+                "a"
+            ]
         }
     ],
     "vim.normalModeKeyBindingsNonRecursive": [
         {
-            "before": ["<C-j>"],
-            "after": ["1", "0", "j"]
+            "before": [
+                "<C-j>"
+            ],
+            "after": [
+                "1",
+                "0",
+                "j"
+            ]
         },
         {
-            "before": ["<C-k>"],
-            "after": ["1", "0", "k"]
+            "before": [
+                "<C-k>"
+            ],
+            "after": [
+                "1",
+                "0",
+                "k"
+            ]
         },
         {
-            "before": ["-"],
-            "after": ["d", "d", "p"]
+            "before": [
+                "-"
+            ],
+            "after": [
+                "d",
+                "d",
+                "p"
+            ]
         },
         {
-            "before": ["_"],
-            "after": ["d", "d", "k", "P"]
+            "before": [
+                "_"
+            ],
+            "after": [
+                "d",
+                "d",
+                "k",
+                "P"
+            ]
         },
         {
-            "before": ["<leader>", "o"],
-            "after": ["o", "<Esc>", "k"]
+            "before": [
+                "<leader>",
+                "o"
+            ],
+            "after": [
+                "o",
+                "<Esc>",
+                "k"
+            ]
         },
         {
-            "before": ["<leader>", "O"],
-            "after": ["O", "<Esc>", "j"]
+            "before": [
+                "<leader>",
+                "O"
+            ],
+            "after": [
+                "O",
+                "<Esc>",
+                "j"
+            ]
         }
     ],
     "editor.rulers": [
@@ -62,18 +114,12 @@
         "typescript"
     ],
     "editor.formatOnSave": true,
-    "prettier.singleQuote": true,
-    "prettier.eslintIntegration": true,
-    "prettier.tabWidth": 2,
     "editor.tabCompletion": "on",
     "debug.console.fontSize": 12,
     "markdown.preview.fontSize": 12,
     "terminal.integrated.fontSize": 12,
     "editor.fontSize": 12,
     "vim.easymotionMarkerFontSize": "12",
-    "[typescript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode"
-    },
     "eslint.autoFixOnSave": true,
     "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "material-icon-theme",
@@ -83,5 +129,6 @@
     "editor.acceptSuggestionOnCommitCharacter": false,
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
-    }
+    },
+    "window.zoomLevel": 0
 }
