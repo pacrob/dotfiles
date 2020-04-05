@@ -9,3 +9,4 @@
 !.config/redshift.conf
 !.config/Code/User/keybindings.json
 !.config/Code/User/settings.json
+!.config/gtk-3.0/gtk.css
