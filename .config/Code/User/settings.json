@@ -92,7 +92,7 @@
     "editor.rulers": [
         80
     ],
-    "workbench.activityBar.visible": false,
+    "workbench.activityBar.visible": true,
     "editor.smoothScrolling": true,
     "workbench.colorCustomizations": {
         "tab.activeBorder": "#ff0000",
