@@ -8,6 +8,7 @@ alias cls='clear; ls'
 alias p2="python2"
 alias p3="python3"
 
+alias gl='git pull'
 alias gs='git status'
 alias gb='git branch'
 alias gd='git diff'
