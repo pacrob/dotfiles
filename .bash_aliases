@@ -16,3 +16,5 @@ alias ga='git add'
 alias gcam='git commit -a -m'
 alias gpo='git push origin'
 alias gpom='git push origin master'
+
+alias kcl='kubectl'

@@ -111,16 +111,16 @@
     },
     "eslint.validate": [
         "javascript",
-        "typescript"
+        "typescript",
+        "html",
+        "vue"
     ],
-    "editor.formatOnSave": true,
     "editor.tabCompletion": "on",
     "debug.console.fontSize": 12,
     "markdown.preview.fontSize": 12,
     "terminal.integrated.fontSize": 12,
     "editor.fontSize": 12,
     "vim.easymotionMarkerFontSize": "12",
-    "eslint.autoFixOnSave": true,
     "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "material-icon-theme",
     "vim.useSystemClipboard": true,
