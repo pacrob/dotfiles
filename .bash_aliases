@@ -13,9 +13,14 @@ alias gs='git status'
 alias gb='git branch'
 alias gd='git diff'
 alias ga='git add'
+alias gcm='git commit -m'
 alias gcam='git commit -a -m'
 alias gpo='git push origin'
 alias gpom='git push origin master'
 
 alias kcl='kubectl'
 alias mkb='minikube'
+
+alias nr="npm run"
+alias nrb="npm run build"
+alias nrt="npm run test"
