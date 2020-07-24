@@ -130,5 +130,10 @@
     "editor.codeActionsOnSave": {
         "source.fixAll.eslint": true
     },
-    "window.zoomLevel": 0
+    "window.zoomLevel": 0,
+    "vs-kubernetes": {
+        "vs-kubernetes.minikube-path.linux": "/home/pacrob/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+        "vs-kubernetes.helm-path.linux": "/home/pacrob/.vs-kubernetes/tools/helm/linux-amd64/helm",
+        "vs-kubernetes.draft-path.linux": "/home/pacrob/.vs-kubernetes/tools/draft/linux-amd64/draft"
+    }
 }
