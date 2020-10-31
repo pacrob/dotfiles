@@ -1,137 +1,85 @@
 {
-    "vim.leader": ",",
-    "keyboard.dispatch": "keyCode",
-    "terminal.integrated.commandsToSkipShell": [
-        "-workbench.action.quickOpen"
-    ],
-    "editor.fontWeight": "600",
-    "terminal.integrated.fontWeight": "600",
-    "terminal.integrated.fontWeightBold": "600",
-    "vim.insertModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<C-i>"
-            ],
-            "after": [
-                "<Esc>",
-                "v",
-                "i",
-                "w",
-                "U",
-                "<Esc>",
-                "e",
-                "a"
-            ]
-        }
-    ],
-    "vim.normalModeKeyBindingsNonRecursive": [
-        {
-            "before": [
-                "<C-j>"
-            ],
-            "after": [
-                "1",
-                "0",
-                "j"
-            ]
-        },
-        {
-            "before": [
-                "<C-k>"
-            ],
-            "after": [
-                "1",
-                "0",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "-"
-            ],
-            "after": [
-                "d",
-                "d",
-                "p"
-            ]
-        },
-        {
-            "before": [
-                "_"
-            ],
-            "after": [
-                "d",
-                "d",
-                "k",
-                "P"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "o"
-            ],
-            "after": [
-                "o",
-                "<Esc>",
-                "k"
-            ]
-        },
-        {
-            "before": [
-                "<leader>",
-                "O"
-            ],
-            "after": [
-                "O",
-                "<Esc>",
-                "j"
-            ]
-        }
-    ],
-    "editor.rulers": [
-        80
-    ],
-    "workbench.activityBar.visible": true,
-    "editor.smoothScrolling": true,
-    "workbench.colorCustomizations": {
-        "tab.activeBorder": "#ff0000",
-        "tab.unfocusedActiveBorder": "#909090",
-        "editorGroup.border": "#294469",
-        "sideBar.border": "#294469",
-        "panel.border": "#294469",
-        "contrastBorder": "#294469"
-    },
-    "editor.tabSize": 2,
-    "[python]": {
-        "editor.tabSize": 4
-    },
-    "editor.formatOnSave": false,
-    "[javascript]": {
-        "editor.defaultFormatter": "esbenp.prettier-vscode",
-        "editor.formatOnSave": true
-    },
-    "eslint.validate": [
-        "javascript",
-        "typescript",
-        "html",
-        "vue"
-    ],
-    "editor.tabCompletion": "on",
-    "editor.fontSize": 12,
-    "editor.minimap.maxColumn": 1200,
-    "editor.minimap.scale": 2,
-    "debug.console.fontSize": 12,
-    "markdown.preview.fontSize": 12,
-    "terminal.integrated.fontSize": 12,
-    "workbench.colorTheme": "Material Theme",
-    "workbench.iconTheme": "material-icon-theme",
-    "vim.useSystemClipboard": true,
-    "editor.acceptSuggestionOnCommitCharacter": false,
-    "window.zoomLevel": 0,
-    "vs-kubernetes": {
-        "vs-kubernetes.minikube-path.linux": "/home/pacrob/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
-        "vs-kubernetes.helm-path.linux": "/home/pacrob/.vs-kubernetes/tools/helm/linux-amd64/helm",
-        "vs-kubernetes.draft-path.linux": "/home/pacrob/.vs-kubernetes/tools/draft/linux-amd64/draft"
+  "vim.leader": ",",
+  "keyboard.dispatch": "keyCode",
+  "terminal.integrated.commandsToSkipShell": ["-workbench.action.quickOpen"],
+  "editor.fontWeight": "600",
+  "terminal.integrated.fontWeight": "600",
+  "terminal.integrated.fontWeightBold": "600",
+  "vim.insertModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-i>"],
+      "after": ["<Esc>", "v", "i", "w", "U", "<Esc>", "e", "a"]
     }
+  ],
+  "vim.normalModeKeyBindingsNonRecursive": [
+    {
+      "before": ["<C-j>"],
+      "after": ["1", "0", "j"]
+    },
+    {
+      "before": ["<C-k>"],
+      "after": ["1", "0", "k"]
+    },
+    {
+      "before": ["-"],
+      "after": ["d", "d", "p"]
+    },
+    {
+      "before": ["_"],
+      "after": ["d", "d", "k", "P"]
+    },
+    {
+      "before": ["<leader>", "o"],
+      "after": ["o", "<Esc>", "k"]
+    },
+    {
+      "before": ["<leader>", "<CR>"],
+      "after": ["i", "<CR>", "<Esc>", "w"]
+    },
+    {
+      "before": ["<leader>", "O"],
+      "after": ["O", "<Esc>", "j"]
+    }
+  ],
+  "editor.rulers": [80],
+  "workbench.activityBar.visible": true,
+  "editor.smoothScrolling": true,
+  "workbench.colorCustomizations": {
+    "tab.activeBorder": "#ff0000",
+    "tab.unfocusedActiveBorder": "#909090",
+    "editorGroup.border": "#294469",
+    "sideBar.border": "#294469",
+    "panel.border": "#294469",
+    "contrastBorder": "#294469"
+  },
+  "editor.tabSize": 2,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "editor.tabCompletion": "on",
+  "debug.console.fontSize": 12,
+  "markdown.preview.fontSize": 12,
+  "terminal.integrated.fontSize": 12,
+  "editor.fontSize": 12,
+  "workbench.colorTheme": "Material Theme",
+  "workbench.iconTheme": "material-icon-theme",
+  "vim.useSystemClipboard": true,
+  "editor.minimap.maxColumn": 1200,
+  "editor.minimap.scale": 2,
+  "editor.acceptSuggestionOnCommitCharacter": false,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "vs-kubernetes": {
+    "vs-kubernetes.minikube-path.linux": "/home/pacrob/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
+    "vs-kubernetes.helm-path.linux": "/home/pacrob/.vs-kubernetes/tools/helm/linux-amd64/helm",
+    "vs-kubernetes.draft-path.linux": "/home/pacrob/.vs-kubernetes/tools/draft/linux-amd64/draft"
+  },
+  "editor.formatOnSave": false,
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.formatOnSave": true
+  },
+  "eslint.validate": ["javascript", "typescript", "html", "vue"],
+  "window.zoomLevel": 0
 }
