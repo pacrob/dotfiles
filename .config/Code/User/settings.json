@@ -106,8 +106,10 @@
     "[python]": {
         "editor.tabSize": 4
     },
+    "editor.formatOnSave": false,
     "[javascript]": {
-        "editor.defaultFormatter": "vscode.npm"
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.formatOnSave": true
     },
     "eslint.validate": [
         "javascript",
@@ -116,20 +118,16 @@
         "vue"
     ],
     "editor.tabCompletion": "on",
+    "editor.fontSize": 12,
+    "editor.minimap.maxColumn": 1200,
+    "editor.minimap.scale": 2,
     "debug.console.fontSize": 12,
     "markdown.preview.fontSize": 12,
     "terminal.integrated.fontSize": 12,
-    "editor.fontSize": 12,
-    "vim.easymotionMarkerFontSize": "12",
     "workbench.colorTheme": "Material Theme",
     "workbench.iconTheme": "material-icon-theme",
     "vim.useSystemClipboard": true,
-    "editor.minimap.maxColumn": 1200,
-    "editor.minimap.scale": 2,
     "editor.acceptSuggestionOnCommitCharacter": false,
-    "editor.codeActionsOnSave": {
-        "source.fixAll.eslint": true
-    },
     "window.zoomLevel": 0,
     "vs-kubernetes": {
         "vs-kubernetes.minikube-path.linux": "/home/pacrob/.vs-kubernetes/tools/minikube/linux-amd64/minikube",
