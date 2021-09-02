@@ -8,8 +8,10 @@ alias cls='clear; ls'
 alias p2="python2"
 alias p3="python3"
 
-alias gl='git pull'
-alias gs='git status'
+alias gpl='git pull'
+alias gl='git log'
+alias gst='git status'
+alias gsw='git switch'
 alias gb='git branch'
 alias gd='git diff'
 alias ga='git add'
@@ -27,3 +29,8 @@ alias nrb="npm run build"
 alias nrt="npm run test"
 
 alias whoshome='~/scripts/netcheck.sh'
+
+alias rm='rm -I --preserve-root'
+alias chmod='chmod --preserve-root'
+alias chown='chown --preserve-root'
+alias chgrp='chgrp --preserve-root
