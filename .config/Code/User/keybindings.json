@@ -167,5 +167,10 @@
         "key": "alt+right",
         "command": "-workbench.action.terminal.focusNextPane",
         "when": "terminalFocus"
+    },
+    {
+        "key": "ctrl+f",
+        "command": "-workbench.action.terminal.focusFind",
+        "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
     }
 ]
