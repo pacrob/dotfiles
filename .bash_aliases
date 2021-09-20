@@ -4,6 +4,11 @@ mcd () {
   cd "$1"
 }
 
+cds () {
+  cd "$1"
+  ls
+)
+
 alias cls='clear; ls'
 alias p2="python2"
 alias p3="python3"
